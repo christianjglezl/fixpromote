@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Tech Reparaciones | Taller de Celulares en Calera, Zacatecas</title>
+  <meta name="description" content="Taller especializado en reparacion de celulares, laptops y consolas en Calera, Zacatecas. Servicio profesional con garantia. Easy Tech Reparaciones." />
+  <meta name="keywords" content="reparacion celulares Calera Zacatecas, cambio de pantalla, cambio de bateria, Easy Tech, reparacion laptops, consolas" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-brand" aria-label="Easy Tech Inicio">
+        <img src="img/logo-white.png" alt="Easy Tech" class="nav-logo" id="navLogo" onerror="this.style.display='none';document.getElementById('navLogoFallback').style.display='flex'" />
+        <span class="nav-logo-fallback" id="navLogoFallback">EASY<span class="accent">TECH</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio"     class="nav-link">Inicio</a>
+        <a href="#servicios"  class="nav-link">Servicios</a>
+        <a href="#accesorios" class="nav-link">Accesorios</a>
+        <a href="#horarios"   class="nav-link">Horarios</a>
+        <a href="https://wa.me/524921951949?text=Hola%2C+necesito+informacion" target="_blank" class="nav-cta" id="navWhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Taller profesional &middot; Calera, Zacatecas
+        </div>
+        <h1 class="hero-title">
+          Tu dispositivo en<br />
+          <span class="gradient-text">las mejores manos</span>
+        </h1>
+        <p class="hero-subtitle">
+          Reparamos celulares, laptops y consolas con precision y garantia.
+          Accesorios de calidad disponibles en tienda.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/524921951949?text=Hola%2C+necesito+una+reparacion" target="_blank" class="btn-primary" id="heroWhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Contactar por WhatsApp
+          </a>
+          <a href="#servicios" class="btn-outline" id="heroServices">Ver Servicios</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="500">0</span><span class="stat-sym">+</span>
+            <span class="stat-lbl">Dispositivos reparados</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="5">0</span><span class="stat-sym">+</span>
+            <span class="stat-lbl">Anos de experiencia</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="100">0</span><span class="stat-sym">%</span>
+            <span class="stat-lbl">Garantia en refacciones</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-content">
+              <div class="phone-icon-row">
+                <div class="pi">&#9881;&#65039;</div>
+                <div class="pi">&#10003;</div>
+                <div class="pi">&#11088;</div>
+              </div>
+              <div class="phone-bar"></div>
+              <div class="phone-bar short"></div>
+              <div class="phone-tag">Reparado con exito</div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+        <div class="floating-chip chip-a">&#128296; Diagnostico Gratis</div>
+        <div class="floating-chip chip-b">&#128737; Garantia incluida</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feat-card">
+          <div class="feat-icon">&#9889;</div>
+          <div class="feat-text">
+            <h3>Diagnostico Gratuito</h3>
+            <p>Sin costo evaluar tu equipo</p>
+          </div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">&#128737;</div>
+          <div class="feat-text">
+            <h3>Garantia Real</h3>
+            <p>Respaldamos cada reparacion</p>
+          </div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">&#128300;</div>
+          <div class="feat-text">
+            <h3>Tecnicos Especializados</h3>
+            <p>Hardware y software avanzado</p>
+          </div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">&#128230;</div>
+          <div class="feat-text">
+            <h3>Refacciones de Calidad</h3>
+            <p>Solo piezas garantizadas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Que reparamos?</span>
+        <h2 class="section-title">Servicios de <span class="gradient-text">Reparacion</span></h2>
+        <p class="section-sub">Soluciones tecnicas profesionales para todos tus dispositivos</p>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="celulares" role="tab" aria-selected="true" id="tabBtn-celulares">
+          <span>&#128241;</span> Celulares
+        </button>
+        <button class="tab-btn" data-tab="pcs" role="tab" aria-selected="false" id="tabBtn-pcs">
+          <span>&#128187;</span> PCs / Laptops
+        </button>
+        <button class="tab-btn" data-tab="consolas" role="tab" aria-selected="false" id="tabBtn-consolas">
+          <span>&#127918;</span> Consolas
+        </button>
+        <button class="tab-btn" data-tab="extra" role="tab" aria-selected="false" id="tabBtn-extra">
+          <span>&#128295;</span> Servicios Extra
+        </button>
+      </div>
+
+      <!-- TAB: CELULARES -->
+      <div class="tab-panel active" id="panel-celulares" role="tabpanel">
+        <div class="service-cols">
+          <div class="service-col-card">
+            <div class="scc-header">
+              <div class="scc-icon hw">&#9881;&#65039;</div>
+              <h3>Hardware</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Cambio de pantalla (display / tactil)</li>
+              <li>Cambio de bateria</li>
+              <li>Cambio de pin / puerto de carga</li>
+              <li>Reparacion o cambio de flex de carga</li>
+              <li>Cambio de camara frontal y trasera</li>
+              <li>Cambio de altavoz / parlante</li>
+              <li>Cambio de auricular (speaker interno)</li>
+              <li>Cambio de microfono</li>
+              <li>Cambio de vibrador</li>
+              <li>Reparacion de botones (power, volumen)</li>
+              <li>Cambio de placa de carga</li>
+              <li>Reparacion de conector de auriculares</li>
+              <li>Cambio de carcasa / tapa trasera</li>
+              <li>Limpieza de contactos y puertos</li>
+              <li>Reparacion de dano por liquido</li>
+              <li>Reballing / reparacion de placa madre</li>
+              <li>Cambio de chip de carga</li>
+              <li>Reparacion de camara que no enfoca</li>
+              <li>Cambio de lente de camara</li>
+            </ul>
+          </div>
+          <div class="service-col-card">
+            <div class="scc-header">
+              <div class="scc-icon sw">&#128190;</div>
+              <h3>Software</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Flasheo / reinstalacion de sistema</li>
+              <li>Desbloqueo de patrones y contrasenas</li>
+              <li>Liberacion de operador (red)</li>
+              <li>Eliminacion de virus / malware</li>
+              <li>Recuperacion de datos</li>
+              <li>Actualizacion de firmware</li>
+              <li>Reparacion de bootloop</li>
+              <li>Root / personalizacion del sistema</li>
+            </ul>
+            <div class="inline-cta">
+              <p>Tu celular tiene otro problema?</p>
+              <a href="https://wa.me/524921951949?text=Hola%2C+tengo+un+problema+con+mi+celular" target="_blank" class="btn-wa-sm" id="celWA">
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: PCS -->
+      <div class="tab-panel" id="panel-pcs" role="tabpanel">
+        <div class="service-cols">
+          <div class="service-col-card">
+            <div class="scc-header">
+              <div class="scc-icon hw">&#9881;&#65039;</div>
+              <h3>Hardware</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Cambio de disco HDD por SSD</li>
+              <li>Instalacion / ampliacion de RAM</li>
+              <li>Cambio de bateria de notebook</li>
+              <li>Cambio de cargador / fuente de poder</li>
+              <li>Reparacion de pin de carga</li>
+              <li>Cambio de teclado</li>
+              <li>Cambio de pantalla de notebook</li>
+              <li>Reparacion de bisagras</li>
+              <li>Limpieza y cambio de pasta termica</li>
+              <li>Cambio de ventilador / cooler</li>
+              <li>Reparacion de placa madre</li>
+              <li>Cambio de placa de video</li>
+              <li>Reparacion de puertos USB / HDMI</li>
+              <li>Cambio de boton de encendido</li>
+              <li>Reparacion de touchpad</li>
+              <li>Cambio de carcasa</li>
+              <li>Instalacion de unidades opticas</li>
+            </ul>
+          </div>
+          <div class="service-col-card">
+            <div class="scc-header">
+              <div class="scc-icon sw">&#128190;</div>
+              <h3>Software</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Instalacion de Windows / Linux</li>
+              <li>Formateo y optimizacion del sistema</li>
+              <li>Eliminacion de virus / malware</li>
+              <li>Recuperacion de datos</li>
+              <li>Instalacion de drivers</li>
+              <li>Configuracion de red / WiFi</li>
+              <li>Actualizacion de BIOS</li>
+              <li>Reparacion de arranque (boot)</li>
+              <li>Clonado de disco</li>
+              <li>Eliminacion de contrasenas BIOS/Windows</li>
+            </ul>
+            <div class="inline-cta">
+              <p>Problemas con tu laptop o PC?</p>
+              <a href="https://wa.me/524921951949?text=Hola%2C+necesito+ayuda+con+mi+computadora" target="_blank" class="btn-wa-sm" id="pcWA">
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: CONSOLAS -->
+      <div class="tab-panel" id="panel-consolas" role="tabpanel">
+        <div class="consolas-grid">
+          <div class="console-card">
+            <div class="cc-header xbox">
+              <span class="cc-emoji">&#127918;</span>
+              <h3>Xbox One / Series X|S</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Limpieza y cambio de pasta termica</li>
+              <li>Cambio de ventilador / cooler</li>
+              <li>Reparacion de lector de discos</li>
+              <li>Reparacion de puerto HDMI</li>
+              <li>Reparacion de fuente de alimentacion</li>
+              <li>Reparacion de boton de encendido</li>
+              <li>Reparacion de puertos USB</li>
+              <li>Reparacion de sobrecalentamiento</li>
+              <li>Cambio de carcasa</li>
+              <li>Reparacion de conectividad WiFi</li>
+              <li>Mantenimiento preventivo</li>
+            </ul>
+          </div>
+          <div class="console-card">
+            <div class="cc-header switch">
+              <span class="cc-emoji">&#128377;&#65039;</span>
+              <h3>Nintendo Switch</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Cambio de pantalla</li>
+              <li>Cambio de bateria</li>
+              <li>Reparacion de Joy-Con (drift / stick)</li>
+              <li>Cambio de sticks analogicos</li>
+              <li>Reparacion de botones y gatillos</li>
+              <li>Reparacion de puerto USB-C</li>
+              <li>Reparacion de lector de cartuchos</li>
+              <li>Reparacion de ventilador / sobrecalentamiento</li>
+              <li>Cambio de carcasa</li>
+              <li>Limpieza y mantenimiento preventivo</li>
+            </ul>
+          </div>
+          <div class="console-card">
+            <div class="cc-header ps">
+              <span class="cc-emoji">&#127919;</span>
+              <h3>PlayStation PS4 / PS5</h3>
+            </div>
+            <ul class="svc-list">
+              <li>Limpieza y cambio de pasta termica</li>
+              <li>Cambio de ventilador / cooler</li>
+              <li>Reparacion de lector de discos</li>
+              <li>Reparacion de puerto HDMI</li>
+              <li>Reparacion de fuente de alimentacion</li>
+              <li>Reparacion de boton de encendido / expulsion</li>
+              <li>Reparacion de puertos USB</li>
+              <li>Reparacion de sobrecalentamiento</li>
+              <li>Cambio de carcasa</li>
+              <li>Reparacion de WiFi / Bluetooth</li>
+              <li>Mantenimiento preventivo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-cta-row">
+          <a href="https://wa.me/524921951949?text=Hola%2C+necesito+reparar+mi+consola" target="_blank" class="btn-primary" id="consolaWA">
+            Consultar reparacion de consola
+          </a>
+        </div>
+      </div>
+
+      <!-- TAB: EXTRA -->
+      <div class="tab-panel" id="panel-extra" role="tabpanel">
+        <div class="extra-grid">
+          <div class="extra-card">
+            <div class="extra-icon">&#128269;</div>
+            <h3>Diagnostico Tecnico</h3>
+            <p>Evaluacion completa y gratuita de tu dispositivo antes de cualquier reparacion.</p>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">&#128295;</div>
+            <h3>Mantenimiento Preventivo</h3>
+            <p>Limpieza profunda y revision general para prolongar la vida de tus equipos.</p>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">&#128190;</div>
+            <h3>Backup de Datos</h3>
+            <p>Respaldo seguro de toda tu informacion antes de cualquier reparacion o formateo.</p>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">&#128274;</div>
+            <h3>Antivirus y Seguridad</h3>
+            <p>Instalacion y configuracion de software de proteccion contra amenazas.</p>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">&#128231;</div>
+            <h3>Configuracion de Cuentas</h3>
+            <p>Configuracion de correo, redes sociales y aplicaciones en tus dispositivos.</p>
+          </div>
+          <div class="extra-card">
+            <div class="extra-icon">&#128189;</div>
+            <h3>Recuperacion de Datos</h3>
+            <p>Recuperamos informacion de discos danados y dispositivos con fallas graves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESORIOS -->
+  <section class="accessories" id="accesorios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tienda</span>
+        <h2 class="section-title">Venta de <span class="gradient-text">Accesorios</span></h2>
+        <p class="section-sub">Todo lo que necesitas para tu celular y computadora en un solo lugar</p>
+      </div>
+      <div class="acc-grid">
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#128268;</div>
+          <h3>Cargadores y Energia</h3>
+          <ul>
+            <li>Cargadores USB-A de pared</li>
+            <li>Cargadores USB-C (carga rapida)</li>
+            <li>Cargadores inalambricos</li>
+            <li>Cargadores para auto 12V</li>
+            <li>Power banks / baterias portatiles</li>
+          </ul>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#128279;</div>
+          <h3>Cables y Adaptadores</h3>
+          <ul>
+            <li>USB-C a USB-C</li>
+            <li>USB-A a USB-C / Lightning / Micro USB</li>
+            <li>Cable HDMI para celular/TV</li>
+            <li>Adaptadores OTG, USB-C a HDMI</li>
+          </ul>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#127911;</div>
+          <h3>Audio</h3>
+          <ul>
+            <li>Auriculares con cable y Bluetooth</li>
+            <li>Manos libres / headsets</li>
+            <li>Parlantes Bluetooth</li>
+            <li>Adaptadores de audio 3.5mm</li>
+          </ul>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#128737;</div>
+          <h3>Proteccion</h3>
+          <ul>
+            <li>Fundas y carcasas variadas</li>
+            <li>Vidrios templados</li>
+            <li>Protectores de pantalla</li>
+          </ul>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#128241;</div>
+          <h3>Otros Accesorios</h3>
+          <ul>
+            <li>Soportes para auto y escritorio</li>
+            <li>Limpiadores y kits de pantalla</li>
+            <li>Pilas y baterias</li>
+          </ul>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon-wrap">&#9000;&#65039;</div>
+          <h3>Perifericos PC</h3>
+          <ul>
+            <li>Teclados USB, inalambricos y mecanicos</li>
+            <li>Mouse USB, inalambrico y gamer</li>
+            <li>Combos teclado + mouse</li>
+            <li>Mousepads</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-cta">
+        <p>Buscas algun accesorio en especifico?</p>
+        <a href="https://wa.me/524921951949?text=Hola%2C+busco+un+accesorio" target="_blank" class="btn-primary" id="accWA">
+          Preguntar disponibilidad
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS Y CONTACTO -->
+  <section class="contact-section" id="horarios">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-block">
+          <div class="section-header left-align">
+            <span class="section-tag">Encuentranos</span>
+            <h2 class="section-title">Horarios y <span class="gradient-text">Ubicacion</span></h2>
+          </div>
+          <div class="hours-table">
+            <div class="hours-row">
+              <div class="days-group">
+                <span class="day-tag">Lun</span>
+                <span class="day-tag">Mar</span>
+                <span class="day-tag">Mie</span>
+                <span class="day-tag">Vie</span>
+              </div>
+              <div class="times-group">
+                <span class="time-pill">10:00 - 15:00</span>
+                <span class="time-and">y</span>
+                <span class="time-pill">17:00 - 19:00</span>
+              </div>
+            </div>
+            <div class="hours-row alt-row">
+              <div class="days-group">
+                <span class="day-tag dim">Jue</span>
+                <span class="day-tag dim">Sab</span>
+                <span class="day-tag dim">Dom</span>
+              </div>
+              <div class="times-group">
+                <span class="time-pill alt">10:00 - 14:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-items">
+            <a href="tel:4921951949" class="contact-item" id="phoneLink">
+              <div class="ci-icon-wrap">&#128222;</div>
+              <div class="ci-details">
+                <span class="ci-label">Telefono / WhatsApp</span>
+                <span class="ci-value">492 195 1949</span>
+              </div>
+            </a>
+            <a href="https://maps.google.com/?q=Calle+Luis+Moya+205+Norte,+Col+Centro,+Calera,+Zacatecas" target="_blank" class="contact-item" id="mapLink">
+              <div class="ci-icon-wrap">&#128205;</div>
+              <div class="ci-details">
+                <span class="ci-label">Direccion</span>
+                <span class="ci-value">Luis Moya 205 Norte, Col. Centro, Calera, Zacatecas</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="map-block">
+          <a href="https://maps.google.com/?q=Calle+Luis+Moya+205+Norte,+Col+Centro,+Calera,+Zacatecas" target="_blank" class="map-visual" id="mapVisual" aria-label="Ver en Google Maps">
+            <div class="map-bg-grid"></div>
+            <div class="map-pin-wrapper">
+              <div class="map-pin-anim">
+                <div class="map-pin-ring r1"></div>
+                <div class="map-pin-ring r2"></div>
+                <div class="map-pin-dot">&#128205;</div>
+              </div>
+              <div class="map-label-box">
+                <strong>Easy Tech Reparaciones</strong>
+                <span>Luis Moya 205 Norte, Calera</span>
+              </div>
+            </div>
+            <div class="map-open-btn">Abrir en Google Maps &rarr;</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" id="contacto">
+    <div class="cta-bg-glow"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2>Tu dispositivo tiene algun problema?</h2>
+        <p>Escribenos ahora &mdash; el diagnostico es <strong>completamente gratis</strong>.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/524921951949?text=Hola%2C+quisiera+un+diagnostico+gratuito" target="_blank" class="btn-primary large" id="ctaWA">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribenos por WhatsApp
+          </a>
+          <a href="tel:4921951949" class="btn-outline large" id="ctaPhone">&#128222; Llamar ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOFTWARE SOLUTIONS -->
+  <section class="software-section">
+    <div class="container">
+      <div class="software-card">
+        <div class="sw-text">
+          <span class="sw-badge">Tambien ofrecemos</span>
+          <h3>Easy Tech <span class="gradient-text">Software Solutions</span></h3>
+          <p>Desarrollamos software a medida para tu negocio: aplicaciones web, sistemas de gestion, automatizacion de procesos y soluciones digitales que impulsan tu empresa.</p>
+          <a href="https://wa.me/524921951949?text=Hola%2C+me+interesa+el+desarrollo+de+software" target="_blank" class="btn-sw" id="swWA">
+            Consultar un proyecto &rarr;
+          </a>
+        </div>
+        <div class="sw-code">
+          <div class="code-window">
+            <div class="cw-bar">
+              <span class="cw-dot r"></span>
+              <span class="cw-dot y"></span>
+              <span class="cw-dot g"></span>
+            </div>
+            <div class="cw-body">
+              <div class="cl"><span class="kw">const</span> <span class="vr">app</span> = <span class="fn">EasyTech</span>.<span class="fn">create</span>();</div>
+              <div class="cl"><span class="kw">await</span> app.<span class="fn">build</span>(<span class="st">'tu-idea'</span>);</div>
+              <div class="cl"><span class="cm">// Solucion lista</span></div>
+              <div class="cl"><span class="kw">return</span> <span class="st">'exito garantizado'</span>;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="img/logo-white.png" alt="Easy Tech" class="footer-logo" id="footerLogo" onerror="this.style.display='none';document.getElementById('footerLogoText').style.display='block'" />
+          <span class="footer-logo-text" id="footerLogoText" style="display:none">EASY<span class="accent">TECH</span></span>
+          <p>Tu taller de confianza en Calera, Zacatecas. Reparamos celulares, laptops y consolas con garantia y profesionalismo.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/524921951949" target="_blank" class="fs-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="tel:4921951949" class="fs-link" aria-label="Llamar">&#128222;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Reparacion de Celulares</a></li>
+            <li><a href="#servicios">Reparacion de Laptops</a></li>
+            <li><a href="#servicios">Reparacion de Consolas</a></li>
+            <li><a href="#accesorios">Venta de Accesorios</a></li>
+            <li><a href="#servicios">Diagnostico Gratuito</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li>&#128222; <a href="tel:4921951949">492 195 1949</a></li>
+            <li>&#128172; <a href="https://wa.me/524921951949" target="_blank">WhatsApp</a></li>
+            <li>&#128205; Luis Moya 205 Norte</li>
+            <li>Col. Centro, Calera, Zac.</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <ul>
+            <li class="fw">Lun &middot; Mar &middot; Mie &middot; Vie</li>
+            <li>10:00-15:00 | 17:00-19:00</li>
+            <li class="fw mt-sm">Jue &middot; Sab &middot; Dom</li>
+            <li>10:00 - 14:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Easy Tech Reparaciones &middot; Calera, Zacatecas</p>
+        <p>Desarrollado por <a href="https://wa.me/524921951949?text=Hola%2C+me+interesa+el+desarrollo+de+software" target="_blank">Easy Tech Software Solutions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/524921951949?text=Hola%2C+necesito+informacion" target="_blank" class="fab-wa" id="fabWA" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Escribenos</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
